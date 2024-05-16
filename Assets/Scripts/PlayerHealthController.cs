@@ -54,7 +54,7 @@ public class PlayerHealthController : MonoBehaviour
     private void Die()
     {
         GameObject.Find("GameManager").GetComponent<GameManager>().RecordPlayingTime();
-        SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("GameOverScene");
     }
 
     IEnumerator InvincibleCooldown()
